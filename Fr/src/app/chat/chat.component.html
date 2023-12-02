@@ -1,0 +1,100 @@
+<!--
+<app-header></app-header>
+<div class="container">
+    <div class="profile-panel">
+        <div class="profile">
+            <a href="#">
+                <div class="profile-info">
+                    <img [src]="zdj" alt="Profil 2" class="profile-image">
+                    <span>Profil 1</span>
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <img [src]="zdj" alt="Profil 2" class="profile-image">
+            Profil 2
+        </div>
+    </div>
+    <div class="chat-container">
+        <div class="profile-name">Aktualny Profil: Profil 1</div>
+        <div class="cos">
+        <div class="messages">
+            <div class="message from-someone">
+                <div class="author">Ktoś:</div>
+                <div class="bubble">Cześć! Jak się masz?</div>
+            </div>
+            <div class="message from-me">
+                <div class="author2">Ja:</div>
+                <div class="bubble">Cześć! Mam się świetnie, dzięki!</div>
+            </div>
+            
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="Wpisz swoją wiadomość...">
+            <button>Wyślij</button>
+        </div>
+        </div>
+        
+    </div>
+</div>
+-->
+
+<style>
+    .D_MainFrame
+    {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        left: 0px;
+    }
+
+    .D_UsrPhoto
+    {
+        width: 50px;
+        height: 50px;
+        background-image: url('/assets/1.png');
+        border-radius: 50px;
+    background-position: scroll;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+
+    .TopContainer
+    {
+        padding: 5px;
+        background-color: rgb(103, 71, 106);
+        display: flex;
+        align-items: center;
+    }
+
+    .SendIcon
+    {
+        width: 50px;
+        height: 50px;
+        background-image: url('/assets/send.png');
+        background-position: scroll;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<div class="D_MainFrame">
+    <app-header></app-header>
+    
+    <div class="Container">
+        <div class="TopContainer">
+            <div class="SendIcon"></div>
+
+            <div class="D_UsrPhoto">
+
+            </div>
+
+            <h1 style="margin-left: 10px;">Imię i nazwisko</h1>
+        </div>
+
+        <div #D_ChatCointainer class="I_Inpuit">
+            <input type="text" #I_TextBox>
+        </div> 
+    </div>
+</div>

@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.profile-panel {
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #352d4d;
+  color: white;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  margin-bottom: 10px;
+  cursor: pointer;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  padding: 0px;
+}
+
+.profile-name {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  border-bottom: 5px white solid;
+  background-color: #5a3e68;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  color: white;
+  margin: 0px;
+}
+
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.messages {
+  max-height: calc(100% ); /* Ograniczenie wysokości wiadomości, aby pozostawić miejsce dla inputu */
+  overflow-y: auto;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.message {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.author2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.bubble {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.from-someone .bubble {
+  align-self: flex-start;
+}
+
+.from-me .bubble {
+ 
+  align-self: flex-end;
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  padding: 20px; /* Dodałem padding, aby poprawić wygląd */
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 15px;
+  background-color: #fad1e7;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #352d4d;
+  background-color: #352d4d;
+  color: white;
+}
+
+button:hover {
+  background-color: #5a3e68;
+}
+
+input:focus {
+  background-color: #70549e;
+  border: #fff;
+  color: white;
+}
+.cos{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #70549e;
+}
+
+.D_MainFrame
+{
+  
+}

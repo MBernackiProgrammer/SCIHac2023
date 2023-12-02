@@ -1,0 +1,78 @@
+<style>
+    .D_Message
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .D_EmptySpace
+    {
+        flex: 1;
+    }
+
+    .D_MessageVal
+    {
+        border-radius: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        border: solid 1px white;
+        background-color: rgb(48, 48, 48);
+        box-shadow: 0px 0px 5px rgb(133, 133, 133);
+        max-width: 50%;
+    }
+
+    .D_Icons
+    {
+        display: none;
+    }
+
+    .D_Message:hover .D_Icons
+    {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .D_AnswerToMessage
+    {
+        background-color: rgb(77, 77, 77);
+        border: solid 1px white;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: -10px;
+        padding-bottom: 10px;
+    }
+
+    .D_Share
+    {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+
+<p style="text-align: right;">{{this.UserName}}</p>
+
+<div style="display: flex;" #D_Answer>
+    <div style="flex: 1;">
+
+    </div>
+    <div class="D_AnswerToMessage">
+        <p>{{this.AnswerToMessage}}</p>
+    </div>
+</div>
+
+
+<div class="D_Message">
+    <div class="D_EmptySpace">
+        
+    </div>
+
+    <div class="D_Icons">
+        
+    </div>
+
+    <div class="D_MessageVal">
+        <p style="color: white;">{{this.TextValue}}</p>
+    </div>
+    
+</div>

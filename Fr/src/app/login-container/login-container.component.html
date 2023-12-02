@@ -1,0 +1,18 @@
+<div class="D_MainFrame">
+    <div class="login">
+        <p class="large">Witaj w LastSunsetMatch </p>
+        
+        <p class="medium">Portalu w którym poznasz duszę <br> do spędzenia ostatniego zachodu słońca </p>
+        <p class="medium">Zaloguj się</p>
+        <div class="SubForm">
+            <p class="black">Login: </p>
+            <input #Login type="text" name="login" id="login" class="log" ><br>
+            <p class="black">Hasło:</p>
+            <input #Password type="password" name="haslo" id="haslo" class="log" ><br>
+            <button class="send" (click)="LoginToApp()">Wyślij</button>
+            <p style="margin-top: 10px; display: none;" #LoginError>Nie udało się zalogować</p>
+        </div>
+        <p class="top">Jeśli nie masz jeszcze konta utwórz je koniecznie!</p>
+        <button routerLink="/reg">Utwórz konto tutaj</button>
+    </div>
+</div>

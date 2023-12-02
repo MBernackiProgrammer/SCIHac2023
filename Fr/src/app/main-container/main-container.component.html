@@ -1,0 +1,69 @@
+<div class="D_MainFrame">
+    <app-header></app-header>
+
+    <div class="D_RowContainer" #SelectPerson>
+        <div class="D_InsideRow">
+            <div class="D_Cell">
+                <div class="D_InsideCell" #UserPhoto>
+                    <!-- <img [src]="displayedImage" alt="Displayed Image" class="image-container"> -->
+                    <img src="/assets/3.png">
+
+                    <div class="D_UsrData">
+                        <h1>Grzesiu</h1>
+                        <h2>Lat 71, Szczecin</h2>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+            <div class="D_Cell">
+                <div class="D_InsideCell" #UserDescribe>
+                    <div class="D_Scroller">
+                        <h1>Ulubiona telewizja informacyjna:</h1>
+                        <h2>TVN</h2>
+
+                        <h1>Moje zainteresowania:</h1>
+                        <h2>Moim hobby jest szerzenie wiedzy, na platformach społęcznościowych.</h2>
+
+                        
+
+                        <h1>Mój ulubiony film:</h1>
+                        <h2>Jest jedyna poprawna odpowiedź - Matrix, cała</h2>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="D_NoPersons" #NoPersons>
+        <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+            <div class="D_Box">
+                <h1>Nie ma nikogo w okolicy...</h1>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="D_Down">
+        <div class="DownButton">
+            <div class="ClickBox">
+                <div class="D_Circle" id="next" (click)="Next()" #B_Next></div>
+            </div>
+        </div>
+        
+
+        <div class="DownButton">
+            <div class="ClickBox">
+                <div class="D_Circle" id="SendRequest" (click)="SendRequest()" #B_SendReq></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
